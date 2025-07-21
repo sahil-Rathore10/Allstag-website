@@ -1,0 +1,84 @@
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #fff;
+}
+
+.animated-title {
+  font-size: 8rem;
+  font-family: dancing script;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.animated-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(60px);
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.loader-container {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #f5f5f5;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.loader-bar-wrapper {
+  width: 100vw;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.loader-bar {
+  height: 2px;
+  /* background: linear-gradient(270deg, #007bff, #00c6ff); */
+  /* background: linear-gradient(270deg, #1d1d33, #15101f); */
+  background: linear-gradient(270deg, #6a11cb, #2575fc);
+  border-radius: 4px;
+  transition: width 0.1s linear;
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.loader-text {
+  position: absolute;
+  right: 0;
+  top: -38px;
+  font-size: 2.2rem;
+  color: #0a0a0a;
+  font-weight: 800;
+  font-family: dancing script;
+  letter-spacing: 0.03em;
+  background: none;
+  padding-right: 8px;
+} 
