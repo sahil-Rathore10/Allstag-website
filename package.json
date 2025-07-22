@@ -10,11 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@remixicon/react": "^4.6.0",
     "gsap": "^3.13.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.60.0",
     "react-router-dom": "^7.7.0",
+    "remixicon": "^4.6.0",
     "toastify": "^2.0.1"
   },
   "devDependencies": {

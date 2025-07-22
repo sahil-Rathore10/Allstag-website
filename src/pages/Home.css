@@ -1,11 +1,13 @@
 .hero-section {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: #fff;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0D1A29, #173A53, #09548a);
+  color: 	#F1E99D;
 }
 
 .animated-title {
@@ -38,7 +40,7 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  background: #f5f5f5;
+  background: linear-gradient(275deg #0D1A29, #173A53, #235E7C);
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -58,9 +60,7 @@
 
 .loader-bar {
   height: 2px;
-  /* background: linear-gradient(270deg, #007bff, #00c6ff); */
-  /* background: linear-gradient(270deg, #1d1d33, #15101f); */
-  background: linear-gradient(270deg, #6a11cb, #2575fc);
+  background: linear-gradient(270deg, #F1E99D, #faeb64);
   border-radius: 4px;
   transition: width 0.1s linear;
   width: 0;
@@ -75,7 +75,7 @@
   right: 0;
   top: -38px;
   font-size: 2.2rem;
-  color: #0a0a0a;
+  color: #F1E99D;
   font-weight: 800;
   font-family: dancing script;
   letter-spacing: 0.03em;

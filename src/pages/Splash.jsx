@@ -21,7 +21,7 @@ const Splash = ({ onComplete }) => {
   }, [loading, onComplete]);
 
   return (
-    <div className="splash-section" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: '#fff' }}>
+    <div className="splash-section" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(275deg, #0D1A29, #173A53, #235E7C)' }}>
       {loading ? (
         <Loader onComplete={() => setLoading(false)} />
       ) : (
