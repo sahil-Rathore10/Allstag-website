@@ -10,9 +10,10 @@ const Navbar = () => {
   useEffect(() => {
     const navElements = navRef.current.querySelectorAll('div');
     gsap.from(navElements, {
-      y: -50,
+      y: -80,
       opacity: 0,
       duration: 1,
+      stagger:0.5,
       ease: 'power3.out',
     });
   }, []);
@@ -30,9 +31,9 @@ const Navbar = () => {
         <h2>Contact Us</h2>
       </div>
       <div className="right-cart-login">
-        <i className="ri-search-2-line" style={{ fontSize: '24px', color: '#F1E99D' }}></i>
-        <i className="ri-user-line" style={{ fontSize: '24px', color: '#F1E99D' }}></i>
-        <i className="ri-shopping-bag-line" style={{ fontSize: '24px', color: '#F1E99D' }}></i>
+        <i className="ri-search-2-line" style={{ fontSize: '18px', color: '#F1E99D' }}></i>
+        <i className="ri-user-line" style={{ fontSize: '18px', color: '#F1E99D' }}></i>
+        <i className="ri-shopping-bag-line" style={{ fontSize: '18px', color: '#F1E99D' }}></i>
       </div>
     </div>
   );

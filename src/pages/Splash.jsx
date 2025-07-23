@@ -37,7 +37,7 @@ const Splash = ({ onComplete }) => {
               </span>
             ))}
           </h1>
-          <p style={{ fontSize: '1.5rem', marginTop: '1rem', textAlign: 'center' }}><i>Shop the best shirts and t-shirts</i></p>
+          <p style={{ fontSize: '1rem', marginTop: '1rem', textAlign: 'center' }}><i>Shop the best shirts and t-shirts</i></p>
         </div>
       )}
     </div>
