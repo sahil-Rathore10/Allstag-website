@@ -1,0 +1,24 @@
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    color: #0E1B24;
+    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .about-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #173A53;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+  

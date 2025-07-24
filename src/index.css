@@ -106,12 +106,12 @@ border: .5px solid #e7e3bf;
 .full{
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   background: linear-gradient(275deg #0D1A29, #173A53, #235E7C);
 }
 .hero-text-left{
   position: relative;
-  top: -3vw;
+  top: -2vw;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background: linear-gradient(275deg, rgba(13, 26, 41, 0.55), rgba(23, 58, 83, 0.45), rgba(35, 94, 124, 0.35));
@@ -182,7 +182,7 @@ border: .5px solid #e7e3bf;
   height: 70vh;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  background-color: #e7e3bf;
+  /* background-color: #e7e3bf; */
   box-shadow: -10px 10px 10px 0px rgba(255,255,255,0.18);
 }
 .hero-img-right img{
@@ -192,4 +192,122 @@ border: .5px solid #e7e3bf;
   border-bottom-left-radius: 45%;
   object-fit: cover;
   object-position: center;
+}
+
+/* Responsive global styles */
+
+@media (max-width: 900px) {
+  .nav {
+    padding: 2vw 3vw;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  .logo {
+    height: 4vw;
+  }
+  .center-nav {
+    gap: 2vw;
+  }
+  .center-nav h2 {
+    font-size: 2vw;
+  }
+  .right-cart-login {
+    gap: 2vw;
+  }
+  .full {
+    height: auto;
+    min-height: 100vh;
+  }
+  .hero-text-left {
+    width: 80vw;
+    height: auto;
+    padding: 0 3vw;
+    border-radius: 4vw;
+    align-items: center;
+    gap: 2vw;
+  }
+  .allstag-headline {
+    font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+  .shop-now-btn {
+    width: 12vw;
+    height: 12vw;
+    font-size: 2vw;
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 80px;
+    max-height: 80px;
+    margin-top: 2vw;
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+    position: static;
+  }
+  .hero-img-right {
+    width: 80vw;
+    height: 40vh;
+    border-radius: 4vw;
+  }
+  .hero-img-right img {
+    border-radius: 4vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 3vw 2vw;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .logo {
+    height: 8vw;
+  }
+  .center-nav {
+    gap: 1vw;
+  }
+  .center-nav h2 {
+    font-size: 3vw;
+  }
+  .right-cart-login {
+    gap: 1vw;
+  }
+  .full {
+    height: auto;
+    min-height: 100vh;
+  }
+  .hero-text-left {
+    width: 95vw;
+    padding: 0 2vw;
+    border-radius: 3vw;
+    gap: 1vw;
+  }
+  .allstag-headline {
+    font-size: 6vw;
+    margin-bottom: 3vw;
+  }
+  .shop-now-btn {
+    width: 18vw;
+    height: 18vw;
+    font-size: 3vw;
+    min-width: 36px;
+    min-height: 36px;
+    max-width: 60px;
+    max-height: 60px;
+    margin-top: 3vw;
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 95%;
+    position: static;
+  }
+  .hero-img-right {
+    width: 95vw;
+    height: 28vh;
+    border-radius: 3vw;
+  }
+  .hero-img-right img {
+    border-radius: 3vw;
+  }
 }

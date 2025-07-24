@@ -44,4 +44,45 @@
   letter-spacing: 0.03em;
   background: none;
   padding-right: 8px;
+}
+
+/* Responsive styles for Loader */
+
+@media (max-width: 900px) {
+  .loader-bar-wrapper {
+    height: 28px;
+  }
+  .loader-bar {
+    height: 6px;
+  }
+  .loader-text {
+    font-size: 1.3rem;
+    top: -28px;
+  }
+  .loader-container {
+    padding-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .loader-bar-wrapper {
+    height: 14px;
+  }
+  .loader-bar {
+    height: 3px;
+  }
+  .loader-text {
+    font-size: 0.75rem;
+    top: -16px;
+    left: 50%;
+    right: unset;
+    transform: translateX(-50%);
+    padding-right: 0;
+    font-weight: 600;
+    text-align: center;
+    min-width: 32px;
+  }
+  .loader-container {
+    padding-bottom: 0.2rem;
+  }
 } 
