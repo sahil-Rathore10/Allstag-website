@@ -29,14 +29,14 @@ const Navbar = () => {
       </div>
       <div className="center-nav">
         <h2 onClick={() => navigate('/')}>Home</h2>
-        <h2>Winters</h2>
+        <h2 onClick={() => navigate('/products')}>Collection</h2>
         <h2>Special Prices</h2>
         <h2>Track Your Order</h2>
         <h2 onClick={() => navigate('/contact')}>Contact Us</h2>
       </div>
       <div className="right-cart-login">
         <i className="ri-search-2-line" style={{ fontSize: '18px', color: '#F1E99D' }}></i>
-        <i className="ri-user-line" style={{ fontSize: '18px', color: '#F1E99D' }}></i>
+        <i className="ri-user-line" style={{ fontSize: '18px', color: '#F1E99D' }} onClick={() => navigate('/login')}></i>
         <div style={{ position: 'relative', display: 'inline-block' }}>
           <i
             className="ri-shopping-bag-line"

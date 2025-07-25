@@ -1,12 +1,36 @@
+.main{
+  background: linear-gradient(135deg, #0D1A29, #173A53, #09548a);
+}
+
 .hero-section {
   min-height: 100vh;
   padding: 8vw 0;
   display: flex;
   position: relative;
+  overflow: hidden;
   gap: 5vw;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0D1A29, #173A53, #09548a);
+  /* background: linear-gradient(135deg, #0D1A29, #173A53, #09548a); */
   color: 	#F1E99D;
+}
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.35; /* optional: dim video for better text readability */
+  pointer-events: none; /* allows clicks to pass through to buttons */
+}
+
+/* All other content should stay layered above the video */
+.hero-text-left,
+.hero-img-right,
+.shop-now-btn {
+  z-index: 1;
+  position: relative;
 }
 
 .animated-title {
@@ -187,13 +211,14 @@
 .summer-collection {
   width: 100%;
   padding: 3rem 0 2rem 0;
-  background: linear-gradient(135deg, rgba(18, 49, 71, 0.85), rgba(6, 67, 110, 0.774));
+  /* background: linear-gradient(135deg, rgba(18, 49, 71, 0.85), rgba(6, 67, 110, 0.774)); */
+  background: linear-gradient(135deg, #0D1A29, #173A53, #09548a);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .summer-heading {
-  font-size: 2.3rem;
+  font-size: 3vw;
   font-weight: 800;
   font-family: 'Playfair Display', serif;
   color: #F1E99D;
@@ -244,3 +269,145 @@
     padding: 1.2rem 0 0.5rem 0;
   }
 } 
+
+
+.shirt-collection {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0D1A29, #173A53, #09548a);
+}
+
+.shirt-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 4vw;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.shirt-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.product-card {
+  min-width: 250px;
+  flex-shrink: 0;
+}
+
+
+/* review part */
+.reviews-section {
+  padding: 50px 0px;
+  background: linear-gradient(135deg, #0D1A29, #173A53, #09548a);
+  text-align: center;
+}
+
+.reviews-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+
+.reviews-list p {
+  font-style: italic;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.video-showcase {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.main-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.side-video {
+  position: absolute;
+  top: 10%;
+  width: 40%;
+  height: 80%;
+  object-fit: cover;
+  object-position: top;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.left-video {
+  left: 0;
+}
+
+.right-video {
+  right: 0;
+}
+
+.video-showcase:hover .left-video:hover,
+.video-showcase:hover .right-video:hover {
+  opacity: 1;
+}
+
+.video-showcase:hover .left-video {
+  opacity: 1;
+}
+
+.video-showcase:hover .right-video {
+  opacity: 1;
+}
+
+.video-showcase:hover {
+  cursor: pointer;
+}
+
+.view-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  border-radius: 30px;
+  z-index: 3;
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.view-btn:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* contact page bg changer */
+.contact-section {
+  background: linear-gradient(135deg, #0D1A29, #173A53, #09548a);
+  color: #F1E99D;
+  padding: 50px 20px;
+}
+
+.contact-section * {
+  color: #F1E99D !important;
+}

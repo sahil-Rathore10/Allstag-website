@@ -1,0 +1,61 @@
+/* Center everything on screen */
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0D1A29, #173A53, #09548a);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Login box container */
+  .login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Logo */
+  .login-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Heading */
+  .login-box h2 {
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .login-box input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  /* Submit button */
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-box button:hover {
+    background-color: #0056b3;
+  }
+  

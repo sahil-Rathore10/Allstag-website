@@ -1,0 +1,46 @@
+.products-container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  background: #0d1a29;
+  color: #f1e99d;
+  min-height: 100vh;
+}
+
+.filter-sidebar {
+  width: 220px;
+  background: #13263a;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.filter-sidebar h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.filter-sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.6rem;
+  border: none;
+  background-color: #faeb64;
+  color: #13263a;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-sidebar button:hover {
+  background-color: #f1e99d;
+}
+
+.product-cards-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}

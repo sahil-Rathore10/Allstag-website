@@ -166,8 +166,8 @@ border: .5px solid #e7e3bf;
   position: absolute;
   z-index: 4;
   overflow: hidden;
-  right: 0;
-  top: 75%;
+  left: 100%;
+  top: 7%;
 }
 .shop-now-btn:hover {
   background: linear-gradient(275deg, #235E7C, #173A53);
