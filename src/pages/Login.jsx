@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from '../firebase/firebaseConfig';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import logo from '../assets/logo.png'; // Replace with your actual logo path
