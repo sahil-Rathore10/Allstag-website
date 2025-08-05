@@ -14,6 +14,7 @@ Welcome to **AllStag**, a stylish and interactive t-shirt and shirt store websit
 - **Frontend:** HTML, CSS, JavaScript
 - **Framework:** ReactJS
 - **State Management:** React Context API
+- - **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
 - **Animations:** GSAP (GreenSock Animation Platform)
 
 ---
@@ -29,6 +30,8 @@ Welcome to **AllStag**, a stylish and interactive t-shirt and shirt store websit
 - ➕ **Add Product (Admin Feature)**: Add new products to the listing.
 - 🧭 **Dynamic Navbar**: Changes based on user login state.
 - 📄 **About and Contact Pages**: Additional static pages for better user engagement.
+- 🎨 **Icon Library**: React Icons used for consistent and scalable UI icons
+
 
 ---
 
@@ -51,7 +54,7 @@ allstag/
 
 ## 📸 Screenshots
 
-> ![Website Preview](./assets/preview.png)
+> ![Website Preview](https://github.com/sahil-Rathore10/Allstag-website/blob/main/src/assets/preview.png)
 
 ---
 
