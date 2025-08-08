@@ -14,7 +14,7 @@ Welcome to **AllStag**, a stylish and interactive t-shirt and shirt store websit
 - **Frontend:** HTML, CSS, JavaScript
 - **Framework:** ReactJS
 - **State Management:** React Context API
-- - **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
+- **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
 - **Animations:** GSAP (GreenSock Animation Platform)
 
 ---
